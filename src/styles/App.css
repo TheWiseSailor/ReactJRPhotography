@@ -1,0 +1,113 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* style.css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+Default styling for larger screens .questions1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 44px;
+  padding-right: 32px;
+  margin-left: 32px;
+}
+
+/* Media query for screens below 1000px */
+@media (max-width: 1400px) {
+  .questions1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .questions {
+    margin-top: 16px;
+  }
+}
+.contacts {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.contacts.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.me {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1.5s ease;
+}
+
+.me.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-me {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.about-me.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* sliding affect */
+.social-link {
+  opacity: 0;
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.delay-10 {
+  animation-delay: 10s;
+}
+
+.delay-20 {
+  animation-delay: 12s;
+}
+
+.delay-30 {
+  animation-delay: 14s;
+}
+
+.delay-40 {
+  animation-delay: 16s;
+}
+
+.delay-50 {
+  animation-delay: 18s;
+}
+
+.delay-60 {
+  animation-delay: 20s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

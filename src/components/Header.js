@@ -35,7 +35,7 @@ function Header() {
             data-aos="fade-down"
             data-aos-duration="3000"
           >
-            J&R.CO
+            JR Photography
           </a>
 
           {/* Hamburger menu icon for mobile view */}

@@ -1,7 +1,7 @@
 import React from "react";
-
+import "../styles/App.css";
 function Work() {
-  return <div>{/* Add your "My Work" content here */}</div>;
+  return <div>This is in working progress</div>;
 }
 
 export default Work;

@@ -2,6 +2,8 @@
 
 import React from "react";
 import "../styles/App.css";
+import applemojiImage from "../components/images/applemoji.jpg";
+import aboutMeImage from "../components/images/Aboutme.jpg";
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -54,24 +56,24 @@ function Home() {
         </div>
         <div className="bg-white flex justify-center items-center pt-36 me">
           <div className="flex space-x-8 md:w-3/4 lg:w-1/2">
-            <div className="flex-shrink-0">
-              <img src="./img/Me.jpg" alt="me" width="150" />
+            <div className="">
+              <img src={applemojiImage} alt="me" width="150" />
             </div>
             <div className="bg-white pt-4 pb-32 rounded-lg justify-center items-center about-me">
-              <h1 className="text-4xl font-bold text-blue-300 flex justify-center items-center pr-16">
+              <h1 className="text-4xl font-bold text-blue-300 flex justify-center text-center items-center ">
                 Who I Am
               </h1>
-              <h2 className="relative text-blue-300 mt-8 font-bold pl-6">
+              <h2 className="flex justify-center items-center text-center text-blue-300 mt-8 font-bold pl-6">
                 I am a passionate individual who loves the art of photography
-                and creating beautiful frontend UI's.
+                and creating beautiful frontend UI/UX designs.
               </h2>
             </div>
           </div>
         </div>
 
         {/* section for why I like photography and coding */}
-        <div className="introduction pb-16 slide-right flex justify-center items-center">
-          <img src="./img/2nd Intro.png" alt="Introduction" />
+        <div className="introduction pb-16  flex justify-center items-center">
+          <img src={aboutMeImage} alt="Introduction" />
         </div>
 
         {/* Contacts */}

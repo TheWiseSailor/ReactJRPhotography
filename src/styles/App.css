@@ -49,27 +49,6 @@ Default styling for larger screens .questions1 {
   opacity: 1;
   transform: translateX(0);
 }
-.me {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1.5s ease;
-}
-
-.me.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.about-me {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s ease, transform 0.8s ease;
-}
-
-.about-me.active {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 /* sliding affect */
 .social-link {

@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.041ce755.css",
-    "main.js": "/static/js/main.6ba503a7.js",
-    "static/js/787.fb1cb9fd.chunk.js": "/static/js/787.fb1cb9fd.chunk.js",
-    "index.html": "/index.html",
-    "main.041ce755.css.map": "/static/css/main.041ce755.css.map",
-    "main.6ba503a7.js.map": "/static/js/main.6ba503a7.js.map",
-    "787.fb1cb9fd.chunk.js.map": "/static/js/787.fb1cb9fd.chunk.js.map"
+    "main.css": "/JRPhotography.com/static/css/main.0c344850.css",
+    "main.js": "/JRPhotography.com/static/js/main.1e906c36.js",
+    "static/js/787.fb1cb9fd.chunk.js": "/JRPhotography.com/static/js/787.fb1cb9fd.chunk.js",
+    "static/media/Aboutme.jpg": "/JRPhotography.com/static/media/Aboutme.e21e16f5ab35a4713767.jpg",
+    "static/media/applemoji.jpg": "/JRPhotography.com/static/media/applemoji.84b7ea479dbdb3f65de5.jpg",
+    "index.html": "/JRPhotography.com/index.html",
+    "main.0c344850.css.map": "/JRPhotography.com/static/css/main.0c344850.css.map",
+    "main.1e906c36.js.map": "/JRPhotography.com/static/js/main.1e906c36.js.map",
+    "787.fb1cb9fd.chunk.js.map": "/JRPhotography.com/static/js/787.fb1cb9fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.041ce755.css",
-    "static/js/main.6ba503a7.js"
+    "static/css/main.0c344850.css",
+    "static/js/main.1e906c36.js"
   ]
 }

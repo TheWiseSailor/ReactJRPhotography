@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ReactPhotography/static/css/main.0c344850.css",
-    "main.js": "/ReactPhotography/static/js/main.0b1d80c4.js",
+    "main.css": "/ReactPhotography/static/css/main.14bf1ea4.css",
+    "main.js": "/ReactPhotography/static/js/main.50298a92.js",
     "static/js/787.fb1cb9fd.chunk.js": "/ReactPhotography/static/js/787.fb1cb9fd.chunk.js",
     "static/media/Aboutme.jpg": "/ReactPhotography/static/media/Aboutme.e21e16f5ab35a4713767.jpg",
     "static/media/applemoji.jpg": "/ReactPhotography/static/media/applemoji.84b7ea479dbdb3f65de5.jpg",
     "index.html": "/ReactPhotography/index.html",
-    "main.0c344850.css.map": "/ReactPhotography/static/css/main.0c344850.css.map",
-    "main.0b1d80c4.js.map": "/ReactPhotography/static/js/main.0b1d80c4.js.map",
+    "main.14bf1ea4.css.map": "/ReactPhotography/static/css/main.14bf1ea4.css.map",
+    "main.50298a92.js.map": "/ReactPhotography/static/js/main.50298a92.js.map",
     "787.fb1cb9fd.chunk.js.map": "/ReactPhotography/static/js/787.fb1cb9fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c344850.css",
-    "static/js/main.0b1d80c4.js"
+    "static/css/main.14bf1ea4.css",
+    "static/js/main.50298a92.js"
   ]
 }

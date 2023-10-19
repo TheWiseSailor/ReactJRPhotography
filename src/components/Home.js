@@ -29,13 +29,15 @@ function Home() {
       className={`flex flex-col min-h-screen ${isDarkMode ? "dark" : "light"}`}
     >
       <div className="container mx-auto p-4 flex-grow pt-32">
-        {/* Toggle Button */}
-        <button
-          onClick={toggleTheme}
-          className="fixed top-4 right-4 z-10 p-2 rounded-full bg-blue-300 text-white dark:bg-gray-800 mt-16"
-        >
-          {isDarkMode ? "Light" : "Dark"} Mode
-        </button>
+        <div className="flex justify-end">
+          {/* Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            className="z-10 p-2 rounded-full bg-blue-300 text-white dark:bg-gray-800 mt-4"
+          >
+            {isDarkMode ? "Light" : "Dark"} Mode
+          </button>
+        </div>
 
         <div
           className="container text-center text-blue-300 text-6xl font-bold pb-32 "

@@ -1,7 +1,15 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+.light {
+  background-color: #fff; /* Light background color */
+  color: #333; /* Light text color */
+}
 
+.dark {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Dark text color */
+}
 /* style.css */
 body {
   overflow-x: hidden;
@@ -102,7 +110,7 @@ Default styling for larger screens .questions1 {
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -131,7 +139,7 @@ body {
   position: absolute;
   top: 60px;
   right: 0;
-  background: white;
+
   width: 100%;
   padding: 20px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);

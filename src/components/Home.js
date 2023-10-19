@@ -1,6 +1,6 @@
 // Home.js
 
-import React from "react";
+import React, { useState } from "react";
 import "../styles/App.css";
 import applemojiImage from "../components/images/applemoji.jpg";
 import aboutMeImage from "../components/images/Aboutme.jpg";
@@ -19,9 +19,24 @@ function Home() {
   script.onload = () => {
     window.AOS.init();
   };
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   return (
-    <div className="flex flex-col min-h-screen">
+    <div
+      className={`flex flex-col min-h-screen ${isDarkMode ? "dark" : "light"}`}
+    >
       <div className="container mx-auto p-4 flex-grow pt-32">
+        {/* Toggle Button */}
+        <button
+          onClick={toggleTheme}
+          className="fixed top-4 right-4 z-10 p-2 rounded-full bg-blue-300 text-white dark:bg-gray-800 mt-16"
+        >
+          {isDarkMode ? "Light" : "Dark"} Mode
+        </button>
+
         <div
           className="container text-center text-blue-300 text-6xl font-bold pb-32 "
           data-aos="fade-down"
@@ -85,7 +100,7 @@ function Home() {
           </div>
         </div>
         <div
-          className="bg-white flex justify-center items-center pt-36 me "
+          className=" flex justify-center items-center pt-36 me "
           data-aos="fade-up"
           data-aos-duration="3000"
         >
@@ -99,7 +114,7 @@ function Home() {
                 data-aos-duration="3000"
               />
             </div>
-            <div className="bg-white pt-4 pb-32 rounded-lg justify-center items-center about-me ">
+            <div className=" pt-4 pb-32 rounded-lg justify-center items-center about-me ">
               <h1
                 className="text-4xl font-bold text-blue-300 flex justify-center text-center items-center "
                 data-aos="fade-down"

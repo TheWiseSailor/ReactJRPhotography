@@ -31,12 +31,12 @@ function Home() {
       <div className="container mx-auto p-4 flex-grow pt-32">
         <div className="flex justify-end">
           {/* Toggle Button */}
-          <button
+          {/* <button
             onClick={toggleTheme}
             className="z-10 p-2 rounded-full bg-blue-300 text-white dark:bg-gray-800 mt-4"
           >
             {isDarkMode ? "Light" : "Dark"} Mode
-          </button>
+          </button> */}
         </div>
 
         <div
@@ -138,11 +138,11 @@ function Home() {
 
         {/* section for why I like photography and coding */}
         <div
-          className="introduction pb-16  flex justify-center items-center"
+          className="introduction pb-16  flex justify-center items-center "
           data-aos="fade-left"
           data-aos-duration="3000"
         >
-          <img src={aboutMeImage} alt="Introduction" />
+          <img src={aboutMeImage} alt="Introduction" className="rounded-2xl" />
         </div>
 
         {/* Contacts */}

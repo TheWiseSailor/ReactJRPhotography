@@ -117,7 +117,7 @@ function Home() {
           data-aos-duration="3000"
         >
           <img
-            src={applemojiImage}
+            src={aboutMeImage}
             alt="me"
             width="150"
             data-aos="fade-right"

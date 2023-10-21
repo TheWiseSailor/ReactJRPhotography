@@ -2,7 +2,7 @@
   "name": "reactphotography",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thewisesailor.github.io/ReactPhotography",
+  "homepage": "https://thewisesailor.github.io/ReactJRPhotography/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

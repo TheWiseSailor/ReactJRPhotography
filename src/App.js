@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import "./styles/App.css";
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,18 +7,14 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   return (
-    <div className={`min-h-screen ${isDarkMode ? "dark" : "light"}`}>
-      <Router>
-        <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+    <div className="min-h-screen">
+      <Router basename="/ReactJRPhotography">
+        {" "}
+        {/* Set the basename */}
+        <Header />
         <Routes>
-          <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
+          <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

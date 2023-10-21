@@ -1,10 +1,8 @@
-// Home.js
-
 import React, { useState } from "react";
-import "../styles/App.css";
+
 import applemojiImage from "../components/images/applemoji.jpg";
 import aboutMeImage from "../components/images/Aboutme.jpg";
-
+import "../styles/App.css";
 function Home() {
   const link = document.createElement("link");
   link.rel = "stylesheet";
@@ -19,36 +17,16 @@ function Home() {
   script.onload = () => {
     window.AOS.init();
   };
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
   return (
-    <div
-      className={`flex flex-col min-h-screen ${isDarkMode ? "dark" : "light"}`}
-    >
+    <div className="flex flex-col min-h-screen">
       <div className="container mx-auto p-4 flex-grow pt-32">
-        <div className="flex justify-end">
-          {/* Toggle Button */}
-          {/* <button
-            onClick={toggleTheme}
-            className="z-10 p-2 rounded-full bg-blue-300 text-white dark:bg-gray-800 mt-4"
-          >
-            {isDarkMode ? "Light" : "Dark"} Mode
-          </button> */}
-        </div>
-
-        <div
-          className="container text-center text-blue-300 text-6xl font-bold pb-32 "
-          data-aos="fade-down"
-          data-aos-duration="3000"
-        >
+        <div className="container text-center text-blue-300 text-6xl font-bold pb-32">
           Beauty That Defines Nature
         </div>
         <div className="grid grid-cols-3 gap-4 ml-">
           {/* Column 1 */}
-          <div className="col-span-1 ">
+          <div className="col-span-1">
             <img
               src="https://images.unsplash.com/photo-1588001832198-c15cff59b078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
               alt="Image 1"
@@ -75,7 +53,7 @@ function Home() {
               data-aos-duration="3000"
             />
             <img
-              src="https://images.unsplash.com/photo-1569116454854-61036894af21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1bnNldHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+              src="https://images.unsplash.com/photo-1569116454854-61036894af21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1bnSldHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
               alt="Image 4"
               className="w-full h-[400px] mt-4 rounded-3xl"
               data-aos="fade-up"
@@ -101,12 +79,8 @@ function Home() {
             />
           </div>
         </div>
-        <div
-          className=" flex justify-center items-center pt-36 me "
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
-          <div className="flex space-x-8 md:w-3/4 lg:w-1/2">
+        <div className="flex justify-center items-center pt-36 me">
+          <div className="flex space-x-8 md:w-3/4 lg-w-1/2">
             <div className="">
               <img
                 src={applemojiImage}
@@ -116,9 +90,9 @@ function Home() {
                 data-aos-duration="3000"
               />
             </div>
-            <div className=" pt-4 pb-32 rounded-lg justify-center items-center about-me ">
+            <div className="pt-4 pb-32 rounded-lg justify-center items-center about-me">
               <h1
-                className="text-4xl font-bold text-blue-300 flex justify-center text-center items-center "
+                className="text-4xl font-bold text-blue-300 flex justify-center text-center items-center"
                 data-aos="fade-down"
                 data-aos-duration="3000"
               >
@@ -138,11 +112,17 @@ function Home() {
 
         {/* section for why I like photography and coding */}
         <div
-          className="introduction pb-16  flex justify-center items-center "
+          className="introduction pb-16 flex justify-center items-center"
           data-aos="fade-left"
           data-aos-duration="3000"
         >
-          <img src={aboutMeImage} alt="Introduction" className="rounded-2xl" />
+          <img
+            src={applemojiImage}
+            alt="me"
+            width="150"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          />
         </div>
 
         {/* Contacts */}
@@ -217,5 +197,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

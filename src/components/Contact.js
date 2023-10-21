@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../styles/App.css";
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,8 +35,8 @@ function Contact() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen ">
-      <div className="w-full max-w-md p-4  border border-blue-300 rounded-2xl">
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="w-full max-w-md p-4 border border-blue-300 rounded-2xl">
         <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">

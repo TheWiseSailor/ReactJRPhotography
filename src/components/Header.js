@@ -29,14 +29,14 @@ function Header() {
     <div>
       <div className="bg-white py-4 fixed w-full top-0 shadow-md z-10">
         <div className="container mx-auto flex items-center justify-between">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-blue-300 text-3xl font-bold ml-4 md:ml-0 pl-6"
             data-aos="fade-down"
             data-aos-duration="3000"
           >
             JR Photography
-          </a>
+          </Link>
 
           {/* Hamburger menu icon for mobile view */}
           <div className="md:hidden" onClick={toggleMenu}>

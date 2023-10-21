@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Add this import
 import "../styles/App.css";
 
 function Header() {
@@ -44,34 +45,30 @@ function Header() {
           </div>
 
           <nav className="hidden md:flex space-x-4">
-            <a
-              href="/work"
+            <Link
+              to="/work"
               className="text-blue-300 hover:text-gray-400 text-3xl pr-6"
-              data-aos="fade-right"
-              data-aos-duration="3000"
             >
               My Work
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="text-blue-300 hover:text-gray-400 text-3xl pr-6"
-              data-aos="fade-left"
-              data-aos-duration="3000"
             >
               Contact
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
 
       {/* Mobile menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        <a href="/work" onClick={closeMenu}>
+        <Link to="/work" onClick={closeMenu}>
           My Work
-        </a>
-        <a href="/contact" onClick={closeMenu}>
+        </Link>
+        <Link to="/contact" onClick={closeMenu}>
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );

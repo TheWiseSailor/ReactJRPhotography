@@ -119,7 +119,6 @@ function Home() {
           <img
             src={aboutMeImage}
             alt="me"
-            width="150"
             data-aos="fade-right"
             data-aos-duration="3000"
           />

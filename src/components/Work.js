@@ -13,17 +13,17 @@ const instagramPostUrls = [
 function Work() {
   return (
     <div className="min-h-screen flex justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36 mt-32">
         {instagramPostUrls.map((url, index) => (
           <div key={index} className="flex justify-center">
             <iframe
               src={`${url}embed/`}
               title={`Instagram Post ${index}`}
-              width="320"
-              height="320" // Set a fixed height here
+              width="340"
+              height="340" // Set a fixed height here
               frameBorder="0"
               scrolling="no"
-              className="rounded-2xl"
+              className="rounded-2xl mb-12 "
             ></iframe>
           </div>
         ))}

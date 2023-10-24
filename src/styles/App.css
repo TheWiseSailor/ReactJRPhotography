@@ -121,17 +121,6 @@ body {
   flex: 1;
 }
 
-/* Header styles */
-.hamburger-menu {
-  display: block;
-  cursor: pointer;
-  width: 30px;
-  height: 3px;
-  background: #333;
-  margin: 6px auto;
-  transition: 0.4s;
-}
-
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -161,33 +150,6 @@ body {
   transform: rotate(-45deg);
 }
 
-.hamburger-menu.open::before,
-.hamburger-menu.open::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-.hamburger-menu::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: #333;
-  position: absolute;
-  top: -8px;
-  transition: 0.4s;
-}
-
-.hamburger-menu::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: #333;
-  position: absolute;
-  top: 8px;
-  transition: 0.4s;
-}
 body {
   overflow-x: hidden;
 }

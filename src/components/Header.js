@@ -41,7 +41,7 @@ function Header() {
               className="text-blue-300 hover:text-gray-400 text-xl pr-6"
               onClick={closeMenu}
             >
-              My Work
+              Works
             </Link>
             <Link
               to="/contact"

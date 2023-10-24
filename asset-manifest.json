@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ReactJRPhotography/static/css/main.526a54bb.css",
-    "main.js": "/ReactJRPhotography/static/js/main.11204d1b.js",
+    "main.js": "/ReactJRPhotography/static/js/main.550b0f16.js",
     "static/js/787.fb1cb9fd.chunk.js": "/ReactJRPhotography/static/js/787.fb1cb9fd.chunk.js",
     "static/media/Aboutme.jpg": "/ReactJRPhotography/static/media/Aboutme.e21e16f5ab35a4713767.jpg",
     "static/media/applemoji.jpg": "/ReactJRPhotography/static/media/applemoji.84b7ea479dbdb3f65de5.jpg",
     "index.html": "/ReactJRPhotography/index.html",
     "main.526a54bb.css.map": "/ReactJRPhotography/static/css/main.526a54bb.css.map",
-    "main.11204d1b.js.map": "/ReactJRPhotography/static/js/main.11204d1b.js.map",
+    "main.550b0f16.js.map": "/ReactJRPhotography/static/js/main.550b0f16.js.map",
     "787.fb1cb9fd.chunk.js.map": "/ReactJRPhotography/static/js/787.fb1cb9fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.526a54bb.css",
-    "static/js/main.11204d1b.js"
+    "static/js/main.550b0f16.js"
   ]
 }

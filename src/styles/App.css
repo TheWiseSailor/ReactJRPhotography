@@ -188,3 +188,9 @@ body {
   top: 8px;
   transition: 0.4s;
 }
+body {
+  overflow-x: hidden;
+}
+.container {
+  overflow-x: hidden;
+}

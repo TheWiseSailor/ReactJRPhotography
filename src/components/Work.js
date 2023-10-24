@@ -12,10 +12,10 @@ const instagramPostUrls = [
 
 function Work() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className="grid grid-cols-3 gap-32">
+    <div className="min-h-screen flex justify-center items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36">
         {instagramPostUrls.map((url, index) => (
-          <div key={index} className="flex justify-center ">
+          <div key={index} className="flex justify-center">
             <iframe
               src={`${url}embed/`}
               title={`Instagram Post ${index}`}

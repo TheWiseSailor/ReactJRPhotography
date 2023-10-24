@@ -23,7 +23,7 @@ function Header() {
             data-aos="fade-down"
             data-aos-duration="3000"
           >
-            JR Photography
+            JR/CO
           </Link>
 
           {/* Hamburger menu icon for mobile view */}

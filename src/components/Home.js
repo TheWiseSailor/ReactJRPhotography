@@ -197,3 +197,5 @@ function Home() {
   );
 }
 export default Home;
+
+// Possible updates on this in the future, that is if I do coding and photography on the side

@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 
 import applemojiImage from "../components/images/applemoji.jpg";
 import aboutMeImage from "../components/images/Aboutme.jpg";
 import "../styles/App.css";
 function Home() {
-  const link = document.createElement("link");
-  link.rel = "stylesheet";
-  link.href = "https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css";
-  document.head.appendChild(link);
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css";
+    document.head.appendChild(link);
 
-  const script = document.createElement("script");
-  script.src = "https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js";
-  document.body.appendChild(script);
+    const script = document.createElement("script");
+    script.src = "https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js";
+    document.body.appendChild(script);
 
-  // Initialize AOS after the script has loaded
-  script.onload = () => {
-    window.AOS.init();
-  };
-
+    // Initialize AOS after the script has loaded
+    script.onload = () => {
+      window.AOS.init();
+    };
+  }, []);
   return (
     <div className="flex flex-col min-h-screen">
       <div className="container mx-auto p-4 flex-grow pt-32">
